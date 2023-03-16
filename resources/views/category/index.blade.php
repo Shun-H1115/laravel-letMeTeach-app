@@ -14,16 +14,19 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-</head>
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
-    <div id="app">
-        @include('layouts.header')
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-
-        @include('layouts.footer')
+    </head>
+<body class="container mx-auto">
+    <!-- sidebar-left -->
+    <div class="w-full lg:w-1/2">
+        
+    </div>
+    <!-- sidebar-right -->
+    <div class= "w-full lg:w-1/2">
+        @foreach($categrory_l_lists as $category_l_list) 
+            <h2 class="c-contentHeadline_title">$category_l_list</h2>
+            <div class="">
+                
+            </div>
     </div>
 </body>
 </html>
