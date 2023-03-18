@@ -20,7 +20,7 @@ class CategoryController extends Controller
         $category_l_lists = array_unique($category_l_lists);
         $user = Auth::user();
 
-        return view('category.index', compact('category_l_lists', 'category_lists',  'user'));
+        return view('categories.index', compact('category_l_lists', 'category_lists',  'user'));
     }
 
     /**
